@@ -80,6 +80,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: center;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -590,8 +591,8 @@
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
-			content: '';
+/*			background: url("images/overlay.png");
+*/			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
@@ -610,17 +611,24 @@
 			top: 0.25em;
 		}
 
+		.image.center {
+			float: center;
+			margin: 0 0 0 0;
+			top: 0.25em;
+			max-width: 20%;
+		}
+
 		.image.right {
 			float: right;
 			margin: 0 0 1em 1.5em;
 			top: 0.25em;
 		}
 
-		.image.left, .image.right {
+		.image.left, .image.right{
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
+			.image.left img, .image.right img, .image.center img{
 				width: 100%;
 			}
 
