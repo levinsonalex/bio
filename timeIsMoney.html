@@ -5,8 +5,52 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
+<script>
+var startDate;
+var wageVar;
+
+function buttonPress(){
+	startDate = new Date();
+	wageVar = document.getElementById('wage').value;
+	refreshTime();
+}
+
+function refreshTime(){
+	var nowTime = new Date();
+	var h = nowTime.getHours();
+	var m = nowTime.getMinutes();
+	var s = nowTime.getSeconds();
+	m = fixTime(m);
+	s = fixTime(s);
+	if(nowTime.getHours() > 12){
+		s = s + " PM";
+		h = h % 12;
+	} else {
+		s = s + " AM";
+	}
+	document.getElementById('clockText').innerHTML = h + ":" + m + ":" + s;
+
+	var diff = nowTime.getTime() - startDate.getTime();
+	diff = diff / 1000 / 60 / 60;
+
+	document.getElementById('output').innerHTML = "$" + (diff * wageVar).toFixed(2);
+
+	var t = setTimeout(function(){refreshTime()},10);
+}
+
+function fixTime(i){
+	if (i < 10) {
+		i = "0" + i;
+	}
+	return i;
+}
+</script>
+
+
 	<head>
-		<title>Generic - Spectral by HTML5 UP</title>
+		<script type="text/javascript"></script>
+		<title>Time Is Money</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -16,7 +60,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
 	</head>
-	<body>
+	<body onload="buttonPress()">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -30,9 +74,12 @@
 
 				<!-- Main -->
 					<article id="main">
-						<header>
-							<h2>Time Is Money</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+						<header style="padding: 8em 0 6em 0;">
+							<h2 id="clockText">Time Broken</h2>						
+							<h2 style="line-height: 1em; font-size: 400%">Time Is Money</h2>
+							<h4 style="line-height: 1em">Cash Earned: <u id="output">$0.00</u></h4>
+							<div><button class="button" onclick="buttonPress()">Start Cash Clock</button></div>
+							<div class="1u" style="margin-left: auto; margin-right: auto; margin-top: 1em;  min-width: 100px; max-width: 20%"><input style="text-align: center;" type="text" name="name" id="wage" placeholder="10.00" /></div>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
