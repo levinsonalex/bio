@@ -34,7 +34,7 @@
 			<section id="header">
 				<header class="major">
 					<h1>Alex Levinson</h1>
-					<p>A Short Informational Webpage About Me</a></p>
+					<p>Software Engineer</a></p>
 				</header>
 				<div class="container">
 					<ul class="actions">
@@ -57,14 +57,21 @@
 						University of Michigan<br>
 						Computer Science Engineering<br><br>
 
-						Core Languages: Java, C++, C<br><br>
+
+						Core Languages:<br>
+						<div class="row">
+							<p class="4u 12u"></p>
+							<p class="4u 12u">
+								Java, C++, C#, C
+							</p><br>
+							<p class="4u 12u"></p>
+						</div>
 
 						Notable Leadership Role:<br>
 						Treasurer of DKE Fraternity<br><br>
-
-						Internships:<br>
-						<div class="image center"><img src="images/ge-logo.png" alt=""/></div><div class="image center" style="max-width:30%; margin: 5% 0 5% 0"><img src="images/msft-logo.png" alt=""/></div><br>
-						General Electric 2014 and Microsoft 2015
+						<a href='images/AlexLevinsonResume.pdf' class="button special" style="min-width=100%">My Resume</a>
+						<br>
+						<br>
 						</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
@@ -79,23 +86,33 @@
 						<header class="major">
 							<h2>Past Projects</h2>
 						</header>
-						<p>Live examples of projects I have worked on.<br>Click on one to learn more.</p>
+						<p>Live examples of projects I have worked on.<br>
+							Click on one to learn more.
+						</p>
 						<ul class="icons-grid">
 							<li>
 								<span class="icon major fa-dollar"></span>
 								<h3><a href="timeIsMoney.html">Time Is Money</a></h3>
+								<br>
+								<h6>A small native javascript webapp for tracking money through time<h6>
 							</li>
 							<li>
 								<span class="icon major fa-lock"></span>
 								<h3><a href="safetyInNumbers.html">Safety in Numbers</a></h3>
+								<br>
+								<h6>A short informational game on the importance of password variation<h6> 
 							</li>
 							<li>
 								<span class="icon major fa-gamepad"></span>
 								<h3><a href="iwbd-tite-zo.html"> It Will Be Done /<br>This Is The End /<br>Zombie Onslaught</a></h3>
+								<br>
+								<h6>Tower Defense into Oldschool Platformer, with a secondary Last Stand mode.<h6> 
 							</li>
 							<li>
 								<span class="icon major fa-code"></span>
-								<h3><a href="http://levinsonalex.github.io/about">About Me<br>Version 1.0</a></h3>
+								<h3><a href="http://levinsonalex.github.io/about">About Me<br>Personal Webpage<br>Version 1.0</a></h3>
+								<br>
+								<h6>My first attempt at a personal website, hosted on github.<h6> 
 							</li>
 						</ul>
 					</div>
@@ -104,23 +121,18 @@
 			</section>
 
 		<!-- Three -->
-			<section id="three" class="main special">
-				<div class="container" style="padding: 2.5em 2.5em 8em 2.5em;">
+ 			<section id="three" class="main special">
+				<div class="container">
 					<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>My Resume</h2>
-						</header>
-						<object data='images/AlexLevinsonResume.pdf#view=FitB&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0' 
-						type='application/pdf' 
-						width='100%' 
-						height='750em'>
-
-						<p>It appears your Web browser is not configured to display PDF files. 
-							No worries, just <a href='images/AlexLevinsonResume.pdf'>click here to download the PDF file.</a></p>
-						</object>
-					</div>
-					<a href="#footer" class="goto-next scrolly">Next</a>
+						<div class="content">
+							<header class="major">
+								<h2>Work History</h2>
+							</header>
+							<p>A detailed description of my work history.<br>
+						</p>
+						<span class="image left"><img src="images/msft-logo.png"/></span><h4>Summer 2015 Seattle, WA</h4><p style="text-align: left">I  worked for the OneNote API Team at Microsoft. I created a new API feature that returns a specific OneNote page as fully renderable HTML. This entailed creating temporary links to private resources that could be accessed without OAuth authorization. This way browsers could call the image source links and load the images when rendering the returned HTML. I also worked on integrating this with the ability to retrieve a screenshot of a page by sending the HTML through phantomJs.</p>
+						<span class="image right" style="max-width:30%"><img src="images/ge-logo.png" alt="" /></span><h4>Summer 2014 Ann Arbor, MI</h4><p style="text-align: left">I worked for General Electric Capital Corporation at their new Advanced Manufacturing and Technology Center between Ann Arbor and Detroit. I worked on a large internal legacy webapp that handled requests for money allocation. An employee with access to the webapp could request a new deal, and the deal would go through a pipeline with the necessary teams signing off legal, risk, etc (even the CEOs if the deal was greater than $1 Billion USD!) all handled by the webapp. I added an entire new column to the dashboard for tracking dates, created a modal popup for legal liabilities when submitting a request, and created tutorials for setting up Jenkins, Maven, and SonarQube.</p>					
+						<a href="#footer" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
 
@@ -452,27 +464,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<div class="container">
 					<header class="major">
 						<h2>Get in touch</h2>
+						<ul class="icons"> 
+							<li><a href="mailto:levinsonalex@gmail.com?Subject=Just%20Visited%20Your%20Website!" target="_top" class="icon major fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/pub/alex-levinson/72/6b5/b9b" target="_top" class="icon major fa-linkedin">
+							<span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/levinsonalex" target="_top" class="icon major fa-github">
+							<span class="label">Github</span></a></li>
+						</ul>
 					</header>
-					<form method="post" action="mailto:levinsonalex@gmail.com?Subject=Just%20Visited%20Your%20Website!">
-						<div class="row uniform">
-							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-							<div class="12u$">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="special" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
 				</div>
 				<footer>
-					<ul class="icons">
-						<li><a href="mailto:levinsonalex@gmail.com?Subject=Just%20Visited%20Your%20Website!" target="_top" class="icon alt fa-envelope">
-						<span class="label">Email</span></a></li>
-					</ul>
 					<ul class="copyright">
-						<li>&copy; Alex Levinson</li><li>Framework From: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Alex Levinson</li>
+						<li>Framework From: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 			</section>
