@@ -904,6 +904,7 @@
 		letter-spacing: 0.05em;
 		line-height: 3.15em;
 		padding: 0 2em;
+		min-width: 130px;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
