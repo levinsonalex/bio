@@ -26,7 +26,7 @@
 		// Disable animations/transitions until the page has loaded.
 			$html.addClass('is-loading');
 
-			$("#bgPic").on('load', function() {
+			window.on('load', function() {
 				window.setTimeout(function() {
 					$html.removeClass('is-loading');
 				}, 0);
