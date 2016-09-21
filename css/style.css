@@ -1146,6 +1146,7 @@
 
 			#header header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
 				color: #ffffff;
+				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 			}
 
 			#header header a {
@@ -1156,7 +1157,7 @@
 					color: #ffffff !important;
 				}
 
-			#header header h1 {
+			#header header h1 {	
 				font-size: 3em;
 				line-height: 1.25em;
 				margin: 0;
@@ -1164,12 +1165,14 @@
 
 				#header header h1:after {
 					margin-top: 0.5em;
+					box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 				}
 
 			#header header p {
 				color: #ffffff;
 				font-weight: 700;
 				margin: 1.5em 0 0 0;
+				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 			}
 
 		#header .container {
