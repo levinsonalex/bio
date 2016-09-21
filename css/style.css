@@ -656,12 +656,22 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		padding-left: 1em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul.b4:before {
+			background: #dddddd;
+			content: '';
+			display: block;
+			height: 2px;
+			margin-top: -1em;
+			position: absolute;
+			width: 100%;
 		}
 
 		ul.alt {
@@ -713,6 +723,10 @@
 
 				ul.icons-grid li h3 {
 					margin: 0;
+				}
+
+				ul.icons-grid li h6 {
+					margin: 0 2em 0 2em;
 				}
 
 				ul.icons-grid li:nth-child(2n + 1) {
@@ -1059,7 +1073,7 @@
 		}
 
 		.main .container {
-			padding: 5em 2.5em 8em 2.5em;
+			padding: 5em 2.5em 5em 2.5em;
 			background: rgba(255, 255, 255, 0.95);
 			box-shadow: inset 0 1px 0 0 #dddddd;
 		}
