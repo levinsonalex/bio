@@ -733,6 +733,10 @@
 					box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
 				}
 
+				ul.icons-grid li:nth-child(2n + 4) {
+					padding-bottom: 13.75%;
+				}
+
 				ul.icons-grid li:nth-child(2n + 3):before {
 					background: #dddddd;
 					content: '';
