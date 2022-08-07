@@ -287,8 +287,7 @@
 @media (-webkit-min-device-pixel-ratio: 2) {
   html body:before {
     line-height: 2.025em;
-
-}
+	}
 }
 
 /* Section/Article */
